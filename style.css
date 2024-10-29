@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+}
+
+header div.lilHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(65,85,103,1) 35%, rgba(25,47,69,1) 100%);
+    height: 400px;
+    margin: 20px;
+}
+
+#lillies{
+    margin: 20px;
+}
+
+header nav {
+    display: block;
+    justify-content: center;
+    justify-content: space-between; /* Space between header and nav */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; /* Centraliza os itens com espaço entre eles */
+    background-color:rgba(25,47,69,1);
+
+}
+li{
+    margin: 20px;
+    padding: 40px;
+}
+
+li:hover {
+    background-color: rgba(65,85,103,1);
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+input {
+    background-color: rgb(101, 110, 116);
+    border: rgb(80, 79, 79) 1px solid;
+    border-radius: 10px;
+}
+
+h3, p, a {
+    color: gray;
+}
+
+h3 span, h1, a span {
+    color: rgb(107, 177, 177);
+}
+
+aside, article {
+    margin: 50px;
+    padding: 50px;
+}
+
+.lilForm {
+    background-color: rgb(49, 58, 66);
+    padding: 50px;
+    margin: 20px;
+    color: rgb(127, 163, 184);
+}
+
+footer{
+    background-image: url(Monet.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin: 20px;
+}
+
+#down, header h1{
+    padding: 180px;
+    font-size: 60px;
+    color: rgb(157, 245, 245);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#down span {
+    font-size: 36px;
+}

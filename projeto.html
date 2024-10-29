@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yasmin Constantino">
+    <meta name="date" content="2024-10-28">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <div class="lilHead">        
+            <h1>Monet's Garden</h1>
+            <img id="lillies" src="WaterLillies.jpeg" alt="Water Lillies by Claude Monet">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre <span>Monet</span></a></li>
+                <li><a href="#ecoBag">Garanta sua <span>Ecobag</span></a></li>
+                <li><a href="https://yasminconstantino.github.io/newPortfolio/">Portfolio da desenvolvedora</a></li>
+              </ul>
+        </nav>
+    </header>
+    <section >
+        <article id="about">
+            <h3>Conheça um pouco sobre <span>Monet</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fNYtIjeE3J8?si=aQbICYxyrgwA0Jl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p></p>
+        </article>
+    </section>
+    <aside>
+        <img src="" alt="">
+        <h3>Clique em <span>play</span> para escutar uma musica tranquila enquanto passeia pelos <span>Jardins de Monet</span></h3>
+        <p>Monet Garden by Unknown</p>
+        <audio controls>
+            <source src="MonetGarden.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+    </aside>
+    <section class="lilForm" id="ecoBag">
+        <img src="" alt="">
+        <form action="">
+            <div>
+                <h3>Se inscreva e ganhe uma <span>Ecobag personalizada</span></h3>
+                <p>Ao agendar sua visita no nosso site você ganha uma linda ecobag perosnalizada!</p>
+            </div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+    
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg"><br><br>
+    
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento"><br><br>
+    
+            <label for="cidade">Cidade:</label>
+            <input list="cidades" name="cidade" id="cidade">
+            <datalist id="cidades">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Belo Horizonte">
+                <option value="Salvador">
+                <option value="Brasília">
+            </datalist><br><br>
+    
+            <label for="color">Escolha uma cor:</label>
+            <input type="color" id="color" name="color"><br><br>
+    
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" id="birthday" name="bday" min="1900-01-01" max="2004-12-31"><br><br>
+    
+            <label for="appt">Horário:</label>
+            <input type="time" id="appt" name="appt"><br><br>
+    
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+    
+            <label for="range">Escolha um número entre 1 e 100:</label>
+            <input type="range" id="range" name="range" min="1" max="100"><br><br>
+    
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+
+        </form>
+    </section>
+    <footer>
+        <h1 id="down">Dedicated to Claude Monet <br> <span>By Yasmin Constantino</span></h1>
+    </footer>
+</body>
+</html>
