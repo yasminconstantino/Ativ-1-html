@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Yasmin Constantino">
     <meta name="date" content="2024-10-28">
-    <title>MOnet's Garden</title>
+    <title>Monet's Garden</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,12 +25,22 @@
     <section >
         <article id="about">
             <h3>Conheça um pouco sobre <span>Monet</span></h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fNYtIjeE3J8?si=aQbICYxyrgwA0Jl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fNYtIjeE3J8?si=aQbICYxyrgwA0Jl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <section id="imageGallery">
+                <h2>Imagens <span>Inspiradoras</span></h2>
+                <div id="imagesContainer">Carregando imagens...</div>
+            </section>
+                     
+            <br>
         </article>
     </section>
     <aside>
         <img src="" alt="">
+        <br>
+        <h1>Acompanhe o clima atual em <span>Giverny</span></h1>
+        <p id="weather">Carregando...</p>
+        <br>
         <h3>Clique em <span>play</span> para escutar uma musica tranquila enquanto passeia pelos <span>Jardins de Monet</span></h3>
         <p>Monet Garden by Unknown</p>
         <audio controls>
@@ -38,7 +48,15 @@
         </audio>
     </aside>
     <section class="lilForm" id="ecoBag">
-        <img src="" alt="">
+        <div class="my-image-gallery">
+            <img src="APega.jpg" alt="A Pega" class="thumbnail">
+            <img src="Bordighera.jpg" alt="Bordighera" class="thumbnail">
+            <img src="Nenúfares.jpg" alt="Nenúfares" class="thumbnail">
+            <img src="OCaminhoAtravésDasPapoilas.jpg" alt="O Caminho Através Das Papoilas" class="thumbnail">
+            <img src="OJardimDoArtistaEmVétheuil.jpg" alt="O Jardim Do Artista Em Vétheuil" class="thumbnail">
+            <img src="UmCaminhoNoJardimDeMonet.jpg" alt="Um Caminho No Jardim De Monet" class="thumbnail">
+            <img src="WaterLiliesAndTheJapaneseBridge.jpg" alt="Water Lilies And The Japanese Bridge" class="thumbnail">
+        </div>
         <form action="">
             <div>
                 <h3>Se inscreva e ganhe uma <span>Ecobag personalizada</span></h3>
@@ -59,41 +77,46 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
     
-            <label for="nascimento">Data de Nascimento:</label>
-            <input type="date" id="nascimento" name="nascimento"><br><br>
-    
-            <label for="cidade">Cidade:</label>
-            <input list="cidades" name="cidade" id="cidade">
-            <datalist id="cidades">
-                <option value="São Paulo">
-                <option value="Rio de Janeiro">
-                <option value="Belo Horizonte">
-                <option value="Salvador">
-                <option value="Brasília">
+            <label for="pintura">Sua pintura favorita:</label>
+            <input list="pinturas" name="pintura" id="pintura">
+            <datalist id="pinturas">
+                <option value="A Pega">
+                <option value="Bordighera">
+                <option value="Nenúfares">
+                <option value="O Caminho Através Das Papoilas">
+                <option value="O Jardim Do Artista Em Vétheuil">
+                <option value="Um Caminho No Jardim De Monet">
+                <option value="Water Lilies And The Japanese Bridge">
             </datalist><br><br>
     
-            <label for="color">Escolha uma cor:</label>
+            <label for="color">Escolha uma cor para sua ecobag:</label>
             <input type="color" id="color" name="color"><br><br>
     
-            <label for="birthday">Data de nascimento:</label>
+            <label for="birthday">Data da visita:</label>
             <input type="date" id="birthday" name="bday" min="1900-01-01" max="2004-12-31"><br><br>
     
-            <label for="appt">Horário:</label>
+            <label for="appt">Horário da visita:</label>
             <input type="time" id="appt" name="appt"><br><br>
     
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+            <label for="quantity">Quantidadede de pinturas por Ecobag:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="7"><br><br>
     
-            <label for="range">Escolha um número entre 1 e 100:</label>
+            <label for="range">Escolha um número entre 1 e 100 que mostre o quão animado você está:</label>
             <input type="range" id="range" name="range" min="1" max="100"><br><br>
     
-            <label for="website">Website:</label>
-            <input type="url" id="website" name="website">
+            <label for="website">Compartilhe sua visita online:</label>
+            <input type="url" id="website" name="website" placeholder="instagram.com/seuperfil"> 
+            
+            <br>
+            <br>
+
+            <button type="submit" id="submitBtn">Enviar</button>
 
         </form>
     </section>
     <footer>
         <h1 id="down">Dedicated to Claude Monet <br> <span>By Yasmin Constantino</span></h1>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
